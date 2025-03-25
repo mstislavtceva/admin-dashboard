@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
+
 import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
-import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
+import SalesTrendChart from "../components/products/SalesTrendChart";
 
 const ProductsPage = () => {
   return (
@@ -44,7 +46,7 @@ const ProductsPage = () => {
         {/* <ProductsTable /> would be here*/}
 
         <div className="grid grid-col-1 lg:grid-cols-2 gap-8">
-          {/* <SalesTrendChart /> would be here */}
+          <SalesTrendChart />
           <CategoryDistributionChart />
         </div>
       </main>
