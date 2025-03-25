@@ -8,7 +8,7 @@ import {
   Legend,
 } from "recharts";
 
-const categoryData = [
+const CATEGORY_DATA = [
   { name: "Electronics", value: 4500 },
   { name: "Clothing", value: 3200 },
   { name: "Home & Garden", value: 2800 },
@@ -33,7 +33,7 @@ const CategoryDistributionChart = () => {
         <ResponsiveContainer width={"100%"} height={"100%"}>
           <PieChart>
             <Pie
-              data={categoryData}
+              data={CATEGORY_DATA}
               cx={"50%"}
               cy={"50%"}
               labelLine={false}
@@ -44,7 +44,7 @@ const CategoryDistributionChart = () => {
                 `${name} ${(percent * 100).toFixed(0)}%`
               }
             >
-              {categoryData.map((entry, index) => (
+              {CATEGORY_DATA.map((entry, index) => (
                 <Cell
                   key={`cell-${index}`}
                   fill={COLORS[index % COLORS.length]}
