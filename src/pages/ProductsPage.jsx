@@ -5,6 +5,7 @@ import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
 import CategoryDistributionChart from "../components/overview/CategoryDistributionChart";
 import SalesTrendChart from "../components/products/SalesTrendChart";
+import ProductsTable from "../components/products/ProductsTable";
 
 const ProductsPage = () => {
   return (
@@ -43,7 +44,7 @@ const ProductsPage = () => {
           />
         </motion.div>
 
-        {/* <ProductsTable /> would be here*/}
+        <ProductsTable />
 
         <div className="grid grid-col-1 lg:grid-cols-2 gap-8">
           <SalesTrendChart />
