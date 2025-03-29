@@ -3,6 +3,7 @@ import { CreditCard, DollarSign, ShoppingCart, TrendingUp } from "lucide-react";
 
 import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
+import SalesOverviewChart from "../components/sales/SalesOverviewChart";
 
 const SALES_STATS_DATA = {
   totalRevenue: "$1,234,567",
@@ -48,6 +49,8 @@ const SalesPage = () => {
             color="#ef4444"
           />
         </motion.div>
+
+        <SalesOverviewChart />
       </main>
     </div>
   );
