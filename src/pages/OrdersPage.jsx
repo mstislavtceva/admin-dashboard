@@ -4,6 +4,7 @@ import { CheckCircle, Clock, DollarSign, ShoppingBag } from "lucide-react";
 import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
 import DailyOrders from "../components/orders/DailyOrders";
+import OrdersDistribution from "../components/orders/OrdersDistribution";
 
 const ORDERS_STATS_DATA = {
   totalOrders: "1,234",
@@ -50,6 +51,7 @@ const OrdersPage = () => {
         </motion.div>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 mb-8">
           <DailyOrders />
+          <OrdersDistribution />
         </div>
       </main>
     </div>
