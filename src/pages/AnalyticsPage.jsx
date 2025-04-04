@@ -3,6 +3,7 @@ import AnalyticOverviewCards from "../components/analytics/AnalyticOverviewCards
 import RevenueChart from "../components/analytics/RevenueChart";
 import ChannelPerfomance from "../components/analytics/ChannelPerfomance";
 import CustomerSegmentation from "../components/analytics/CustomerSegmentation";
+import ProductPerfomance from "../components/analytics/ProductPerfomance";
 
 const AnalyticsPage = () => {
   return (
@@ -13,6 +14,7 @@ const AnalyticsPage = () => {
         <RevenueChart />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 ">
           <ChannelPerfomance />
+          <ProductPerfomance />
           <CustomerSegmentation />
         </div>
       </main>
