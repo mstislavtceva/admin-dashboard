@@ -4,6 +4,7 @@ import RevenueChart from "../components/analytics/RevenueChart";
 import ChannelPerfomance from "../components/analytics/ChannelPerfomance";
 import CustomerSegmentation from "../components/analytics/CustomerSegmentation";
 import ProductPerfomance from "../components/analytics/ProductPerfomance";
+import UserRetention from "../components/analytics/UserRetention";
 
 const AnalyticsPage = () => {
   return (
@@ -15,6 +16,7 @@ const AnalyticsPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 ">
           <ChannelPerfomance />
           <ProductPerfomance />
+          <UserRetention />
           <CustomerSegmentation />
         </div>
       </main>
