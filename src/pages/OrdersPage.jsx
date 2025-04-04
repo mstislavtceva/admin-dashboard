@@ -5,6 +5,7 @@ import Header from "../components/common/Header";
 import StatCard from "../components/common/StatCard";
 import DailyOrders from "../components/orders/DailyOrders";
 import OrdersDistribution from "../components/orders/OrdersDistribution";
+import OrdersTable from "../components/orders/OrdersTable";
 
 const ORDERS_STATS_DATA = {
   totalOrders: "1,234",
@@ -53,6 +54,7 @@ const OrdersPage = () => {
           <DailyOrders />
           <OrdersDistribution />
         </div>
+        <OrdersTable />
       </main>
     </div>
   );
